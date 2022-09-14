@@ -4,13 +4,13 @@ import java.util.Collections;
 public class ReorderDigits {
 
     static public void reorderDigits(int[] arr, String order) {
-
         int[] arr2 = new int[arr.length];
-
+        //call reorder method for each number in the array
         for ( int i = 0 ; i < arr.length ; ++i ) {
+            //push reordered number to new array
             arr2[i] = reorderDigit(arr[i], order);
         }
-
+        //print results! <3
         System.out.println(Arrays.toString(arr2));
     }
     public static int reorderDigit(int a, String order) {
